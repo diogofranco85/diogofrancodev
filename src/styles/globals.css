@@ -1,0 +1,51 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+* {
+    outline: 0;
+    margin: 0;
+    padding: 0;
+}
+
+@layer base {
+    body {
+        @apply text-lg leading-8 text-white;
+    }
+
+    .active {
+        @apply bg-pink-500 text-white rounded-full hover:bg-pink-400 hover:text-white
+    }
+
+    .h2 {
+        @apply text-[32px] mb-6 tracking-[10%] uppercase;
+    }
+
+    .h3 {
+        @apply font-semibold text-[26px] mb-6 leading-[46px];
+    }
+
+    .text-gradient {
+        @apply bg-gradient-to-r text-transparent bg-clip-text from-[#42A6E3] to-[#FF56F6] font-bold hover:from-[#FF56F6] hover:to-[#42A6E3];
+    }
+
+    .btn {
+        @apply rounded-full text-white font-medium;
+    }
+
+    .btn-sm {
+        @apply h-[48px] px-6 text-sm;
+    }
+
+    .btn-lg {
+        @apply h-[48px] px-6 text-sm;
+    }
+
+    .btn-link {
+        @apply text-base;
+    }
+
+    .section {
+        @apply py-8 lg:py-24 lg:h-screen flex items-center;
+    }
+}
