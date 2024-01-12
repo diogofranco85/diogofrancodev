@@ -63,7 +63,7 @@ export default function Banner() {
                             initial='hidden'
                             whileInView={'show'}
                             viewport={{ once: false, amount: 0.7 }}
-                            className="flex w-full max-w-max mx-auto gap-x-6 justify-center items-center mb-12"
+                            className="flex w-full max-w-max mx-auto gap-x-6 justify-center items-start lg:items-center mb-12"
                         >
                             <BtnPrimary type="scroll" href="contact">
                                 <Translator path="banner.btnContact" />
