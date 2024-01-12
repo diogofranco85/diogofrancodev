@@ -12,36 +12,36 @@ export default function About() {
         threshold: 0.5
     })
     return (
-        <section id="about" className="section" ref={ref}>
+        <section id="about" className="" ref={ref}>
             <div className="container mx-auto">
-                <div className="flex flex-col gap-y-10 lg:flex-row">
+                <div className="flex flex-col gap-y-10 lg:flex-row lg:items-center lg:gap-x-20 lg:gap-y-0 h-screen">
                     <div className="flex">
-                        <div className="flex-1 p-10">
+                        <div className="flex-1 lg:p-10">
                             <Image src={AboutImg} alt="about" title="about" width="50%" height="50%" />
                         </div>
                         <div className="flex-1 ml-4">
                             <h2 className="h2 text-pink-500">Sobre mim</h2>
                             <h3>Eu sou um desenvolvedor full-stack com mais de 15 anos de experiencia</h3>
-                            <p>
+                            <p className="mb-6">
                                 !Lorem Ipsum is simply dummy text of the printing and typesetting industry.
                                 Lorem Ipsum has been the industry's standard dummy text ever since the 1500s
                             </p>
                             <div className="flex gap-x-6 lg:gap-x-10 mb-12">
                                 <div>
                                     <div className="text-[40px] text-gradient">
-                                        {InView ? <CountUp start={0} end={13} duration={3} /> : null}
+                                        {inView ? <CountUp start={0} end={13} duration={10} /> : null}
                                     </div>
                                     <div className="text-sm tracking-[2px]">Anos de <br />experiência</div>
                                 </div>
                                 <div>
                                     <div className="text-[40px] text-gradient">
-                                        {InView ? <CountUp start={0} end={13} duration={3} /> : null}
+                                        {inView ? <CountUp start={0} end={13} duration={10} /> : null}
                                     </div>
                                     <div className="text-sm tracking-[2px]">Anos de <br />experiência</div>
                                 </div>
                                 <div>
                                     <div className="text-[40px] text-gradient">
-                                        {InView ? <CountUp start={0} end={13} duration={3} /> : null} K+
+                                        {inView ? <CountUp start={0} end={13} duration={10} /> : null} K+
                                     </div>
                                     <div className="text-sm tracking-[2px]">Projetos <br />Completos</div>
                                 </div>

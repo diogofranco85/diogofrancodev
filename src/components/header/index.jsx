@@ -9,12 +9,12 @@ export default function Header() {
     const pathname = usePathname();
     return (
         <header id="home" className="py-8 w-full">
-            <div className="container mx-auto w-full">
-                <div className="flex flex-1 justify-between items-center w-full">
+            <div className="container mx-auto w-full flex ">
+                <div className="flex flex-1 justify-between flex-col lg:flex-row items-center w-full">
                     <a href="#">
-                        <span className="text-2xl">Diogo Franco</span>
+                        <span className="text-4xl mb-4 lg:mb-0 lg:text-2xl">Diogo Franco</span>
                     </a>
-                    <div className="flex justify-center items-center">
+                    <div className="flex mt-4 lg:mt-0 lg:justify-center items-center text-[14px]">
                         {
                             pathname === '/'
                                 ? <BtnPrimary href="blog" >Blog</BtnPrimary>
